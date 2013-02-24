@@ -1,0 +1,14 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index
+GET		/helloWorld					controllers.Application.helloWorld
+GET		/echo						controllers.Application.echo
+
+GET		/proxyGet/*urlToProxy		controllers.Application.proxyGet(urlToProxy)
+POST	/JsSayHello					controllers.JsonServices.sayHello
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
