@@ -1,3 +1,3 @@
-# This is your new Play 2.1 application
+# This is a VERY simple Play 2.1 Scala Application for introductory demos
 
 This file will be packaged with your application, when using `play dist`.
